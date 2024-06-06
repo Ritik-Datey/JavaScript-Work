@@ -4,3 +4,14 @@
 
  let array2=new Array(1,2,3,4,5);
  //console.log(array2);
+
+ // ADD TWO NUMBERS
+
+  let l1=[1,2,3];
+
+  let val=Math.floor(l1.length/2);
+  console.log(val);
+  
+
+
+  
