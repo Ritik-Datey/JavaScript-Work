@@ -1,0 +1,41 @@
+.canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+
+.button{
+    /* padding: 50px 80px; */
+    width: 100px;
+    height: 100px;
+    /* margin: 4px; */
+    border-radius: 5px;
+    border: solid black 2px;
+    display: inline-block;
+}
+
+#grey{
+    background-color: grey;
+}
+
+#cornflowerblue
+{
+    background-color: cornflowerblue;
+}
+
+#teal{
+    background-color: teal;
+}
+
+#teal{
+    background-color: teal;
+}
+
+#whitesmoke{
+    background-color: whitesmoke;
+}
+
+#seagreen{
+    background-color: seagreen;
+}
+
