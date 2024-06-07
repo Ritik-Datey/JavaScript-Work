@@ -1,0 +1,19 @@
+#container {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+
+input{
+    border: solid black 2px;;
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+
+/* #submit{
+    margin-left: 50px;
+} */
+
+#result{
+    font-size: 23px;
+}
