@@ -6,13 +6,76 @@
     <title>Async</title>
     <style>
         input{
-            border-radius: 5%;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #stop{
+            margin-left: 55px;
+            border-radius: 10px;
         }
     </style>
+   
 </head>
 <body>
-    <form >
-        <input type="text" name="Name" id="Name">
-    </form>
+   <div id="container">
+    <h1>Hello Buddy</h1>
+    <form>
+        <input type="text" name="Name" id="Name" placeholder="Enter your name">
+        <input type="submit" value="submit" id="submit">
+    </form><br>
+
+    <button id="stop">Stop</button> <br>
+    <br>
+    <div>
+        <ul id="print"></ul>
+    </div>
+
+    
+   </div>
 </body>
+ <Script>
+
+    const changeText = function()
+    {
+        document.querySelector('h1').innerHTML="Enter your Name And click to Submit to print it multiple time"
+    }
+    
+    const backToOld = setTimeout(changeText,2000);
+    
+    function addLi(name)
+    {
+        const li= document.createElement('li');
+        li.appendChild(document.createTextNode(name))
+        document.querySelector('#print').appendChild(li); 
+    }
+
+    document.querySelector('#submit').addEventListener('click',function(e){
+        e.preventDefault();
+        const name=document.querySelector('#Name').value;
+        
+        let print=setInterval(function(str){
+            addLi(name);
+        },1000,)
+
+        setTimeout(function(){
+        document.querySelector('h1').innerHTML="To Stop printing click on stop button"
+        },3000)
+
+        document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(print);
+        setTimeout(function(){
+        document.querySelector('h1').innerHTML=" Welcome Buddy BYE !"
+        },1000)
+        })
+    });
+
+
+   
+   
+   
+    
+ // setTimeout(changeMe,2000)
+    // To stope above settimeout we have to treat above method as variable
+    </Script>
 </html>
