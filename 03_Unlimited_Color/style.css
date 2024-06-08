@@ -1,3 +1,7 @@
+body{
+    background-color: #414141;
+    color: aliceblue;
+}
 button{
     margin-left: 35px;
     border-radius: 10px;
