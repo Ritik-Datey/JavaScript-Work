@@ -1,7 +1,11 @@
-.canvas {
-    margin: 100px auto 100px;
-    width: 80%;
+/* body {
+    background-color: rgb(51, 50, 50);
+    opacity: 0.9;
+  }  */
+
+.canvas { 
     text-align: center;
+    margin-top: 10%;
   }
 
 .button{
@@ -38,4 +42,5 @@
 #seagreen{
     background-color: seagreen;
 }
+
 
